@@ -1,0 +1,60 @@
+.banner {
+    padding: 0;
+    background-color: #454545;
+}
+.banner .container-fluid {
+    padding: 0;
+}
+#instafeed, #instafeed_footer {
+    width: 100%;
+}
+#instafeed a, #instafeed_footer a {
+    display: inline-block;
+    position: relative;
+    width: 8.33%;
+}
+#instafeed_footer a{
+    border: 0;
+}
+#instafeed a .background, #instafeed_footer a .background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-shadow: 0 0 3px #000;
+    color: #FFF;
+    font-size: 0;
+    background: rgba(0,0,0, 0.4);
+}
+#instafeed a .background .likes,
+#instafeed_footer a .background .likes { display: none; }
+#instafeed a:hover > .background,
+#instafeed_footer a:hover > .background {
+   background: transparent;
+}
+#instafeed a:hover > .background .likes,
+#instafeed_footer a:hover > .background .likes {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30%;
+    font-weight: bold;
+}
+#instafeed img,
+#instafeed_footer img { width: 100%; border-radius: 0; border: 0; }
+
+@media (max-width: 768px) {
+    #instafeed a,
+    #instafeed_footer a { width: 16.6%; }
+}
+
+
+.footer-top .container {
+    width: 100%;
+    padding: 0;
+}
+.footer-top .footer-top__section {
+    padding: 0;
+}

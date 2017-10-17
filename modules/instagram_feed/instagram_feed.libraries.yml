@@ -1,0 +1,10 @@
+widget:
+  version: 1.0
+  js:
+    js/instafeed.min.js: {}
+    js/instafeed.init.js: {}
+  css:
+    component:
+      css/instafeed.css: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_page_attachments().
+ */
+function instagram_feed_page_attachments(array &$attachments) {
+    $attachments['#attached']['library'][] = 'instagram_feed/widget';
+}
+
+function instagram_feed_page_attachments_alter(&$build) {
+    $build['#attached']['library'][] = 'instagram_feed/widget';
+
+}
