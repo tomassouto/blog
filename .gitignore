@@ -37,3 +37,4 @@ sites/simpletest
 
 .idea
 .idea/*
+.DS_Store
