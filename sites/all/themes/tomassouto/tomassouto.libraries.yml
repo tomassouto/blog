@@ -420,11 +420,3 @@ fonts-id-44:
     name: SIL Open Font License, 1.1
     url: //scripts.sil.org/OFL
     gpl-compatible: true
-
-instafeed:
-  version: 1.x
-  js:
-    js/instafeed.min.js: {}
-    js/custominstafeed.js: {}
-    dependencies:
-        - core/jquery
