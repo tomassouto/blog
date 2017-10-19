@@ -1,16 +1,23 @@
-(function ($) {
-    'use strict';
+(function ($, Drupal, drupalSettings) {
+    /**
+     * @namespace
+     */
+    var userId      = drupalSettings.instagram_feed.userId;
+    var clientId    = drupalSettings.instagram_feed.clientId;
+    var accessToken = drupalSettings.instagram_feed.accessToken;
+    var limit       = drupalSettings.instagram_feed.limit;
+
     jQuery(document).ready(function() {
         if (jQuery('#instafeed').length > 0) {
             jQuery('#instafeed').html('');
             var feed = new Instafeed({
                 target: 'instafeed',
                 get: 'user',
-                userId: '4316093165',
+                userId: userId,
                 limit: '24',
                 sortBy: 'most-recent',
-                clientId: 'f3a28587d6454bd8baa7b2dc60429749',
-                accessToken: '4316093165.1677ed0.4a2468a2232448e2810a46c9a3cb8d31',
+                clientId: clientId,
+                accessToken: accessToken,
                 resolution: 'thumbnail',
                 template: '<a href="{{link}}" target="_blank"><span class="background"><span class="likes">{{likes}} likes</span></span><img src="{{image}}" /></a>',
             });
@@ -22,15 +29,16 @@
             var feed_footer = new Instafeed({
                 target: 'instafeed_footer',
                 get: 'user',
-                userId: '4316093165',
+                userId: userId,
                 limit: '24',
                 sortBy: 'most-recent',
-                clientId: 'f3a28587d6454bd8baa7b2dc60429749',
-                accessToken: '4316093165.1677ed0.4a2468a2232448e2810a46c9a3cb8d31',
+                clientId: clientId,
+                accessToken: accessToken,
                 resolution: 'thumbnail',
                 template: '<a href="{{link}}" target="_blank"><span class="background"><span class="likes">{{likes}} likes</span></span><img src="{{image}}" /></a>',
             });
             feed_footer.run();
         }
     })
-})(jQuery);
+
+})(jQuery, Drupal, drupalSettings);

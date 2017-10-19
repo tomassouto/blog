@@ -8,3 +8,4 @@ widget:
       css/instafeed.css: {}
   dependencies:
     - core/jquery
+    - core/drupalSettings

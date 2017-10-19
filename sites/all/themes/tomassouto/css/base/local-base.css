@@ -7,3 +7,48 @@
 /*body {
   font-weight: 300;
 }*/
+
+
+body.path-frontpage #block-tomassouto-content { display: none; }
+
+body.path-frontpage .view-id-articles .views-row,
+body.path-blog .view-id-articles .views-row {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 7px solid #f4f4f4;
+}
+body.path-frontpage .view-id-articles .views-row:last-of-type,
+body.path-blog .view-id-articles .views-row:last-of-type { border: 0; }
+
+#block-views-block-tags-block-1 ul {
+    list-style: none;
+}
+#block-views-block-tags-block-1 ul li {
+    list-style: none;
+    display: inline-block;
+}
+#block-views-block-tags-block-1 ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #ff0066;
+    color: #FFF;
+    text-decoration: none;
+}
+#block-views-block-tags-block-1 ul li a:hover {
+    background: #18768c;
+}
+
+/*
+Article list
+*/
+.node__header article.profile { margin-right: 0; }
+div.field--entity-reference-target-type-taxonomy-term:after { content: none; }
+div.field--entity-reference-target-type-taxonomy-term { padding: 10px 0; }
+
+/*
+Sidebar
+*/
+.sidebar__section div.block {
+    padding: 0 0 30px 0;
+}

@@ -1,0 +1,7 @@
+instagram_feed.settings:
+  path: '/admin/structure/instagram_feed/settings'
+  defaults:
+    _form: '\Drupal\instagram_feed\Form\instagramFeedSettingsForm'
+    _title: 'Instagram Feed'
+  requirements:
+    _permission: 'administer site configuration'

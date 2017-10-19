@@ -9,4 +9,13 @@ function instagram_feed_page_attachments(array &$attachments) {
 function instagram_feed_page_attachments_alter(&$build) {
     $build['#attached']['library'][] = 'instagram_feed/widget';
 
+    $userId     = Drupal::config('instagram_feed.settings')->get('instagram_feed_userid');
+    $clientId   = Drupal::config('instagram_feed.settings')->get('instagram_feed_clientid');
+    $accessToken= Drupal::config('instagram_feed.settings')->get('instagram_feed_accesstoken');
+    $limit      = Drupal::config('instagram_feed.settings')->get('instagram_feed_limit');
+    $build['#attached']['drupalSettings']['instagram_feed']['userId']       = $userId;
+    $build['#attached']['drupalSettings']['instagram_feed']['clientId']     = $clientId;
+    $build['#attached']['drupalSettings']['instagram_feed']['accessToken']  = $accessToken;
+    $build['#attached']['drupalSettings']['instagram_feed']['limit']        = $limit;
+
 }
