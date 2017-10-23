@@ -1,0 +1,15 @@
+name: Facebook Comments Block
+type: module
+description: Create a configurable block to display Facebook comments widget.
+package: Social
+
+# core: 8.x
+
+dependencies:
+  - block
+
+# Information added by Drupal.org packaging script on 2017-03-13
+version: '8.x-2.0'
+core: '8.x'
+project: 'facebook_comments_block'
+datestamp: 1489413789
