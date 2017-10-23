@@ -1,0 +1,8 @@
+
+#block-facebookcommentsblock .fb_iframe_widget { width: 100%; }
+#block-facebookcommentsblock .fb-comments.fb_iframe_widget span {
+    width: 100% !important;
+}
+#block-facebookcommentsblock .fb-comments.fb_iframe_widget iframe {
+    width: 100% !important;
+}
