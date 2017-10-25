@@ -6,3 +6,20 @@
 #block-facebookcommentsblock .fb-comments.fb_iframe_widget iframe {
     width: 100% !important;
 }
+
+#block-socialsharingblock .social-media-sharing ul {
+    text-align: right;
+}
+#block-socialsharingblock .social-media-sharing ul li {
+    margin-right: 0;
+    margin-left: 3px;
+}
+#block-socialsharingblock .social-media-sharing ul li .email {
+    word-wrap: inherit;
+    word-break: inherit;
+    white-space: inherit;
+}
+
+body.page-node-type-article a {
+    word-break: break-word;
+}

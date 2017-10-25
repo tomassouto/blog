@@ -21,6 +21,22 @@
           }
         }
       });
+
+
+
+      $(context).find('.node__main-content img').once('mtMagnificPopupFieldImageInit').magnificPopup({
+        type: 'image',
+        gallery: {
+          enabled: true
+        },
+        callbacks: {
+          elementParse: function(qw) {
+            qw.src = qw.el.attr('src');
+          }
+        }
+      });
+
+
     }
   };
 })(jQuery, Drupal, drupalSettings);
